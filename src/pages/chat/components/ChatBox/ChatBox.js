@@ -32,7 +32,8 @@ class ChatBox extends React.Component {
 
                         <li>
                             <div className="message-data">
-                                <span className="message-data-name"><i className="fa fa-circle online"></i> Vincent</span>
+                                <span className="message-data-name"><i
+                                    className="fa fa-circle online"></i> Vincent</span>
                                 <span className="message-data-time">10:12 AM, Today</span>
                             </div>
                             <div className="message my-message">
@@ -56,7 +57,8 @@ class ChatBox extends React.Component {
 
                         <li>
                             <div className="message-data">
-                                <span className="message-data-name"><i className="fa fa-circle online"></i> Vincent</span>
+                                <span className="message-data-name"><i
+                                    className="fa fa-circle online"></i> Vincent</span>
                                 <span className="message-data-time">10:20 AM, Today</span>
                             </div>
                             <div className="message my-message">
@@ -66,7 +68,8 @@ class ChatBox extends React.Component {
 
                         <li>
                             <div className="message-data">
-                                <span className="message-data-name"><i className="fa fa-circle online"></i> Vincent</span>
+                                <span className="message-data-name"><i
+                                    className="fa fa-circle online"></i> Vincent</span>
                                 <span className="message-data-time">10:31 AM, Today</span>
                             </div>
                             <i className="fa fa-circle online"></i>
@@ -90,7 +93,7 @@ class ChatBox extends React.Component {
                 </div>
 
             </div>
-        )
+        );
     }
 }
 

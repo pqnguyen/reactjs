@@ -50,6 +50,8 @@ class Main extends React.Component {
             'Monica Ward',
             'monicaward@gmail.com',
             'https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_08.jpg', true, new Date().toLocaleString());
+
+        this.writeMessages(1, 3);
     };
 
     content = () => {
@@ -61,7 +63,7 @@ class Main extends React.Component {
         );
     };
 
-    writeUserData = (userId, username, displayName, email, imageUrl, active, lastActive, friends=[]) => {
+    writeUserData = (userId, username, displayName, email, imageUrl, active, lastActive, friends = []) => {
         this.props.database.ref('users/' + userId).set({
             userId,
             username,
@@ -71,6 +73,29 @@ class Main extends React.Component {
             active,
             lastActive,
             friends
+        });
+    };
+
+    writeMessages = (fromUser, toUser) => {
+        this.props.database.ref(`messages/${fromUser}/${toUser}`).set({
+            contents: [
+                {
+                    owner: fromUser,
+                    time: new Date().toLocaleString(),
+                    content: 'Are we meeting today? Project has been already finished and I have results to show you.'
+                },
+                {
+                    owner: toUser,
+                    time: new Date().toLocaleString(),
+                    content: 'Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?'
+                },
+                {
+                    owner: fromUser,
+                    time: new Date().toLocaleString(),
+                    content: 'Actually everything was fine. I\'m very excited to show this to our team.'
+                }
+            ],
+            typing: toUser
         });
     };
 
