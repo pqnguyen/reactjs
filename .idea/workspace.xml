@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa780c3e-4704-43e6-962b-94ccae761a09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" afterDir="false" />
     </list>
@@ -139,7 +143,7 @@
           <entry key="css" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="50" />
+          <entry key="js" value="53" />
           <entry key="json" value="3" />
           <entry key="jsx" value="15" />
           <entry key="ts" value="1" />
@@ -151,7 +155,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JSX Harmony" value="15" />
-          <entry key="JavaScript" value="50" />
+          <entry key="JavaScript" value="53" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -182,7 +186,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -192,6 +196,21 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -244,9 +263,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/flickr/explorePage.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/flickr/exploreReducer.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/flickr/exploreAction.jsx" />
         <option value="$PROJECT_DIR$/src/redux/actionType/trendingActionType.jsx" />
         <option value="$PROJECT_DIR$/src/pages/trending/trendingReducer.jsx" />
         <option value="$PROJECT_DIR$/src/pages/trending/trendingAction.jsx" />
@@ -295,6 +311,9 @@
         <option value="$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js" />
         <option value="$PROJECT_DIR$/src/layout/Main.js" />
         <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" />
+        <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js" />
+        <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js" />
+        <option value="$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js" />
       </list>
     </option>
   </component>
@@ -541,7 +560,7 @@
       <workItem from="1539691847443" duration="94000" />
       <workItem from="1539743811866" duration="238000" />
       <workItem from="1540905867587" duration="560000" />
-      <workItem from="1541244001953" duration="21528000" />
+      <workItem from="1541244001953" duration="21849000" />
     </task>
     <task id="LOCAL-00001" summary="get friend list">
       <created>1541303458503</created>
@@ -554,13 +573,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108185000" />
+    <option name="totallyTimeSpent" value="108506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22339676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22339676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -573,7 +591,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -635,27 +653,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/ImageCard/ImageCard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageDetail/ImageDetail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TopBar/TopBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/trendingDetail/trendingDetailPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -979,6 +976,15 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
