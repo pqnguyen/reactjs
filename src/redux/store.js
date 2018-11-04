@@ -14,9 +14,8 @@ const store = createStore(
     rootReducer,
     undefined, composeEnhancer(
         applyMiddleware(thunkMiddleware),
-        applyMiddleware(loggerMiddleware),
+        applyMiddleware(loggerMiddleware)
     )
 );
-
 
 export default store;
