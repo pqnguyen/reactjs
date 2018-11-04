@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getFriendList} from "./friendListAction";
+import {chatWith} from "../ChatBox/chatBoxAction";
 
 class FriendList extends React.Component {
     componentDidUpdate(prevProps, prevState) {
@@ -50,10 +51,14 @@ class FriendList extends React.Component {
         );
     };
 
+    chatWithFriend = (userId) => () => {
+        this.props.chatWith(userId)
+    }
+
     renderFriendItem = (friend) => {
         const {userId, displayName, active, imageUrl, lastActive} = friend;
         return (
-            <li className="clearfix" key={userId}>
+            <li className="clearfix friend-item" key={userId} onClick={this.chatWithFriend(userId)}>
                 <img src={imageUrl}
                      alt="avatar"/>
                 <div className="about">
@@ -90,5 +95,6 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-    getFriendList
+    getFriendList,
+    chatWith
 })(FriendList);

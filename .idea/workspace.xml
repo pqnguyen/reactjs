@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa780c3e-4704-43e6-962b-94ccae761a09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/loginAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/loginReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/Chat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/chat/chatStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chatStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,10 +143,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
+          <entry key="css" value="6" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="79" />
+          <entry key="js" value="87" />
           <entry key="json" value="3" />
           <entry key="jsx" value="15" />
           <entry key="ts" value="1" />
@@ -154,11 +154,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
+          <entry key="CSS" value="6" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="3" />
           <entry key="JSX Harmony" value="15" />
-          <entry key="JavaScript" value="79" />
+          <entry key="JavaScript" value="87" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -166,10 +166,10 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="57" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="9619" />
+          <entry key="JavaScript" value="10305" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
@@ -180,9 +180,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="8" />
+          <entry key="css" value="57" />
           <entry key="html" value="1" />
-          <entry key="js" value="9619" />
+          <entry key="js" value="10305" />
           <entry key="json" value="2" />
           <entry key="txt" value="19" />
         </counts>
@@ -191,7 +191,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -204,10 +204,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/layout/Main.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/chat/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="585">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -216,19 +216,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/friendListReducer.js">
+        <entry file="file://$PROJECT_DIR$/src/layout/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="281">
+              <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/login/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/login/loginAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="40" />
+            <state>
+              <caret column="23" selection-start-column="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/login/loginReducer.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/chat/chatStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="214" column="1" lean-forward="true" selection-start-line="214" selection-start-column="1" selection-end-line="214" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -236,17 +277,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="95">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -263,8 +295,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/sta</find>
-      <find>BrowserRouter</find>
       <find>pages/flickr/flickrPage.jsx</find>
       <find>flickr</find>
       <find>sunset</find>
@@ -293,6 +323,8 @@
       <find>Olia</find>
       <find>0</find>
       <find>chat .chat-header img</find>
+      <find>friends</find>
+      <find>people-list ul l</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -304,11 +336,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/redux/actionType/trendingActionType.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/trending/trendingReducer.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/trending/trendingAction.jsx" />
-        <option value="$PROJECT_DIR$/src/redux/actionType/imageDetailActionType.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/imageDetail/imageDetailReducer.jsx" />
         <option value="$PROJECT_DIR$/src/components/TrendingThumbnail/TrendingThumbnail.css" />
         <option value="$PROJECT_DIR$/src/components/TrendingThumbnail/TrendingThumbnail.jsx" />
         <option value="$PROJECT_DIR$/src/components/ImageDetail/ImageCard.css" />
@@ -347,14 +374,19 @@
         <option value="$PROJECT_DIR$/src/pages/chat/components/friendList/friendListReducer.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/redux/rootReducer.js" />
-        <option value="$PROJECT_DIR$/src/pages/chat/Chat.js" />
         <option value="$PROJECT_DIR$/src/redux/actionType/chatBoxActionType.js" />
         <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxReducer.js" />
-        <option value="$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js" />
-        <option value="$PROJECT_DIR$/src/layout/Main.js" />
-        <option value="$PROJECT_DIR$/src/pages/chat/chatStyle.css" />
         <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js" />
         <option value="$PROJECT_DIR$/src/pages/chat/components/ChatBox/ChatBox.js" />
+        <option value="$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js" />
+        <option value="$PROJECT_DIR$/src/pages/chat/chatStyle.css" />
+        <option value="$PROJECT_DIR$/src/components/login/Login.js" />
+        <option value="$PROJECT_DIR$/src/components/login/loginAction.js" />
+        <option value="$PROJECT_DIR$/src/components/login/loginReducer.js" />
+        <option value="$PROJECT_DIR$/src/layout/Main.js" />
+        <option value="$PROJECT_DIR$/src/pages/chat/Chat.js" />
+        <option value="$PROJECT_DIR$/src/pages/login/loginAction.js" />
+        <option value="$PROJECT_DIR$/src/pages/login/Login.js" />
       </list>
     </option>
   </component>
@@ -444,33 +476,14 @@
               <item name="chatapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ChatBox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="friendList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="counter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chatapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chatapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatapp" type="b2602c69:ProjectViewProjectNode" />
@@ -521,6 +534,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/pages/chat/components/friendList" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -601,7 +615,7 @@
       <workItem from="1539691847443" duration="94000" />
       <workItem from="1539743811866" duration="238000" />
       <workItem from="1540905867587" duration="560000" />
-      <workItem from="1541244001953" duration="32415000" />
+      <workItem from="1541244001953" duration="36168000" />
     </task>
     <task id="LOCAL-00001" summary="get friend list">
       <created>1541303458503</created>
@@ -614,7 +628,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119072000" />
+    <option name="totallyTimeSpent" value="122825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -695,21 +709,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/trendingDetail/trendingDetailPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/layout/layout.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/pages/imageDetail/imageDetailAction.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -927,27 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/chat/chatAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/actionType/friendListActionType.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/chat/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,13 +964,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/friendListReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -999,34 +978,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout/Main.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="95">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/FriendList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/friendList/friendListReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/chat/chatStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        <state relative-caret-position="693">
+          <caret line="214" column="1" lean-forward="true" selection-start-line="214" selection-start-column="1" selection-end-line="214" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/chat/components/ChatBox/chatBoxAction.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/login/loginReducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layout/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="281">
+          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,6 +1021,40 @@
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/chatAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/loginAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/chat/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

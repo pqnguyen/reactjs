@@ -7,7 +7,14 @@ import FriendList from "./components/friendList/FriendList";
 import {getUser} from "./chatAction";
 
 class Chat extends React.Component {
+    requireLogin = () => {
+        if (!localStorage.getItem('chat-token')) {
+            this.props.history.push('/login');
+        }
+    }
+
     componentWillMount() {
+        this.requireLogin()
         this.props.getUser(1)
     }
 

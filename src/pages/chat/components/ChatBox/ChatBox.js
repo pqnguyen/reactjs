@@ -12,7 +12,7 @@ class ChatBox extends React.Component {
 
     componentDidUpdate(prevProps, prevState) {
         if (!prevProps.friends.length && this.props.friends.length) {
-            this.props.chatWith(4)
+            this.props.chatWith(this.props.friends[0].userId)
         }
     }
 

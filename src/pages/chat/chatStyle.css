@@ -42,10 +42,13 @@ body {
     height: 770px;
 }
 .people-list ul li {
-    padding-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 .people-list img {
     float: left;
+    border-radius: 50%;
 }
 .people-list .about {
     float: left;
@@ -205,4 +208,8 @@ body {
     content: " ";
     clear: both;
     height: 0;
+}
+
+.friend-item:hover {
+    background-color: #65696d;
 }

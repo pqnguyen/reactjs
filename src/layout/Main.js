@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {Layout} from 'antd';
 import {BrowserRouter as Router, Route, Switch, Link, Redirect} from "react-router-dom";
 import Chat from "../pages/chat/Chat";
+import Login from "../pages/login/Login";
 
 class Main extends React.Component {
 
@@ -74,6 +75,8 @@ class Main extends React.Component {
         return (
             <Router>
                 <Switch>
+                    <Route path='/login' component={Login}/>
+                    <Route path='/' component={Chat}/>
                 </Switch>
             </Router>
         );
@@ -128,8 +131,7 @@ class Main extends React.Component {
 
         return (
             <Layout>
-                {/*{this.content()}*/}
-                <Chat/>
+                {this.content()}
             </Layout>
         );
     }
