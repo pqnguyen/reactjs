@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {getFriendList} from "./friendListAction";
 import {chatWith} from "../ChatBox/chatBoxAction";
+import Logout from "../../../logout/Logout";
 
 class FriendList extends React.Component {
     componentDidUpdate(prevProps, prevState) {
@@ -81,6 +82,7 @@ class FriendList extends React.Component {
                 <ul className="list">
                     {friendItems}
                 </ul>
+                <Logout/>
             </div>
         );
     }

@@ -8,7 +8,7 @@ import Login from "../pages/login/Login";
 class Main extends React.Component {
 
     componentDidMount() {
-        this.fakeData();
+        // this.fakeData();
     }
 
     fakeData = () => {

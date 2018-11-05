@@ -5,7 +5,6 @@ import * as firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/database';
 import connect from "react-redux/es/connect/connect";
-import {getUser} from "../chat/chatAction";
 import {updateUser} from "./loginAction";
 
 class Login extends Component {
@@ -27,7 +26,7 @@ class Login extends Component {
         } else {
             firebase.auth().signOut();
         }
-        document.getElementById('quickstart-sign-in').disabled = true;
+        // document.getElementById('quickstart-sign-in').disabled = true;
     };
 
     handleSignin = (user) => {
@@ -47,7 +46,6 @@ class Login extends Component {
                 document.getElementById('quickstart-sign-in').textContent = 'Sign out';
                 document.getElementById('quickstart-account-displayname').textContent = displayName;
                 document.getElementById('quickstart-account-email').textContent = email;
-
                 this.handleSignin(user);
             } else {
                 document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
