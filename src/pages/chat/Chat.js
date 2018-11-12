@@ -21,10 +21,6 @@ class Chat extends React.Component {
     }
 
     render() {
-        // const sampleTodo = { text: 'Sample', done: false }
-        // const pushSample = () => this.props.firebase.push('todos', sampleTodo)
-        // pushSample()
-
         return (
             <div>
                 <div className="container clearfix">
@@ -41,7 +37,9 @@ const mapStateToProps = (state, props) => {
 };
 
 export default compose(
-    firebaseConnect(),
+    firebaseConnect([
+        'users'
+    ]),
     connect(mapStateToProps, {
         getUser
     })
