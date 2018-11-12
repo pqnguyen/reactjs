@@ -256,3 +256,11 @@ ul {
     width: 100px;
     border-radius: 5px;
 }
+
+.active {
+    color: red !important;
+}
+
+.image-content {
+    width: 100%;
+}

@@ -17,7 +17,15 @@ class Main extends React.Component {
             'pqnguyen1996@gmail.com',
             'https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg',
             true,
-            new Date().toLocaleString(), [2, 3, 4, 5, 6, 7, 8]);
+            new Date().toLocaleString(), [
+                {id: 2, star: 0},
+                {id: 3, star: 0},
+                {id: 4, star: 0},
+                {id: 5, star: 0},
+                {id: 6, star: 0},
+                {id: 7, star: 0},
+                {id: 8, star: 0}
+            ]);
         this.writeUserData(2,
             'vincentporter',
             'Vincent Porter',

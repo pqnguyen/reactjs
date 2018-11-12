@@ -4,11 +4,15 @@ export const getFriendList = (keys) => async (dispatch, getState) => {
     const promises = keys.map(key => getState().common.database.ref('users').child(key).once('value'));
     const friends = await Promise.all(promises);
     const friendList = friends ? friends.map(friend => friend.val()) : [];
+    const myUser = getState().chat.myUser
 
     const action = {
         type: friendListActionType.GET_FRIEND_LIST_SUCCESS,
         response: {
             friends: friendList
+        },
+        meta: {
+            myUser: myUser
         }
     };
     dispatch(action);

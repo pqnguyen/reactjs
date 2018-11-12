@@ -1,6 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {chatWith, getMessages, sendMessage} from "./chatBoxAction";
+import {chatWith, getMessages, sendMessage, starFriend} from "./chatBoxAction";
+import {getUser} from "../../chatAction";
+import {getFriendList} from "../friendList/friendListAction";
+import {isImageUrl, isURL} from "../../../../utils/common";
+import UploadImage from "./UploadImage";
 
 class ChatBox extends React.Component {
     constructor() {
@@ -12,22 +16,29 @@ class ChatBox extends React.Component {
 
     componentDidUpdate(prevProps, prevState) {
         if (!prevProps.friends.length && this.props.friends.length) {
-            this.props.chatWith(this.props.friends[0].userId)
+            this.props.chatWith(this.props.friends[0].userId);
         }
     }
 
+    renderContent = (content) => {
+        if (isURL(content) && isImageUrl(content))
+            return (<img className="image-content" src={content}/>);
+        return content;
+    };
+
     renderMessageItem = (message) => {
         const {id, content, owner, time} = message;
-        const {toUser, fromUser} = this.props
+        const {toUser, fromUser} = this.props;
         if (owner == this.props.fromUser.userId) {
             return (
                 <li key={id}>
                     <div className="message-data">
-                        <span className="message-data-name"><i className="fa fa-circle online"></i> {fromUser.displayName}</span>
+                        <span className="message-data-name"><i
+                            className="fa fa-circle online"></i> {fromUser.displayName}</span>
                         <span className="message-data-time">{new Date(time).toLocaleTimeString()}</span>
                     </div>
                     <div className="message my-message">
-                        {content}
+                        {this.renderContent(content)}
                     </div>
                 </li>
             );
@@ -36,10 +47,11 @@ class ChatBox extends React.Component {
                 <li className="clearfix" key={id}>
                     <div className="message-data align-right">
                         <span className="message-data-time">{new Date(time).toLocaleTimeString()}</span> &nbsp; &nbsp;
-                        <span className="message-data-name">{toUser.displayName}</span> <i className="fa fa-circle me"></i>
+                        <span className="message-data-name">{toUser.displayName}</span> <i
+                        className="fa fa-circle me"></i>
                     </div>
                     <div className="message other-message float-right">
-                        {content}
+                        {this.renderContent(content)}
                     </div>
                 </li>
             );
@@ -51,8 +63,24 @@ class ChatBox extends React.Component {
         return contents.map(content => this.renderMessageItem(content));
     };
 
+    handleStarFriend = () => {
+        this.props.starFriend(1, this.props.toUser.userId);
+        this.props.getUser(1);
+
+        const friendIds = this.props.fromUser.friends.map(friend => friend.id);
+        this.props.getFriendList(friendIds);
+    };
+
     renderChatHeader = (numsMessage) => {
-        const {toUser} = this.props
+        const {toUser} = this.props;
+        let start = {star: 0};
+        if (this.props.fromUser.friends)
+            start = this.props.fromUser.friends.filter(friend => friend.id === toUser.userId)[0];
+
+        let starStyle = 'fa fa-star';
+        if (start.star === 1)
+            starStyle += ' active';
+
         return (
             <div className="chat-header clearfix">
                 <img src={toUser.imageUrl}
@@ -62,10 +90,10 @@ class ChatBox extends React.Component {
                     <div className="chat-with">Chat with {toUser.displayName}</div>
                     <div className="chat-num-messages">already 1 {numsMessage} messages</div>
                 </div>
-                <i className="fa fa-star"></i>
+                <i className={starStyle} onClick={this.handleStarFriend}></i>
             </div>
-        )
-    }
+        );
+    };
 
     handleChangeMessage = (e) => {
         this.setState({
@@ -83,13 +111,13 @@ class ChatBox extends React.Component {
 
     handlePressEnter = (e) => {
         if (e.key === 'Enter') {
-            this.handleSendMessage()
+            this.handleSendMessage();
         }
-    }
+    };
 
     handleClick = () => {
-        this.handleSendMessage()
-    }
+        this.handleSendMessage();
+    };
 
     scrollToBottom = () => {
         setTimeout(() => {
@@ -127,6 +155,8 @@ class ChatBox extends React.Component {
                     <i className="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
                     <i className="fa fa-file-image-o"></i>
 
+                    <UploadImage/>
+
                     <button onClick={this.handleClick}>Send</button>
 
                 </div>
@@ -149,5 +179,8 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
     getMessages,
     sendMessage,
-    chatWith
+    chatWith,
+    starFriend,
+    getUser,
+    getFriendList
 })(ChatBox);
