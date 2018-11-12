@@ -25,7 +25,7 @@ class UploadImage extends React.Component {
         return (
             <div style={{display: 'inline-block'}}>
                 <Upload {...props}>
-                    <Button>
+                    <Button style={{height: '30px', background: '#211d18'}}>
                         <Icon type="upload"/>
                     </Button>
                 </Upload>
